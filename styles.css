@@ -5,7 +5,7 @@ body{
 #bodydiv{
     /* width: 80%; */
     display: flex;
-    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-evenly;
     margin: 20px;
     padding: 20px;
@@ -14,7 +14,7 @@ body{
 
 #col1{
     display: grid;
-    grid-template-columns: repeat(2,1.4fr);
+    grid-template-columns: repeat(3,1.4fr);
     grid-template-rows: repeat(5,1fr);
     column-gap: 30px;
     row-gap: 30px;
@@ -24,7 +24,7 @@ body{
 }
 #col3{
     display: grid;
-    grid-template-columns: repeat(2,1.4fr);
+    grid-template-columns: repeat(3,1.4fr);
     grid-template-rows: repeat(5,1fr);
     column-gap: 30px;
     row-gap: 30px;
@@ -56,4 +56,76 @@ border-radius: 8px;
 
 span{
     font-size: 40px;
+}
+
+@media (max-width: 1350px){
+    #col1{
+        display: grid;
+        grid-template-columns: repeat(2,1.4fr);
+        grid-template-rows: repeat(5,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }  
+    
+    #col3{
+        display: grid;
+        grid-template-columns: repeat(2,1.4fr);
+        grid-template-rows: repeat(5,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+        top: 4%;  
+    }
+
+    .col1img{
+        height: 15vh;
+        margin-left: 18px;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .col1img{
+        height: 11vh;
+        margin-left: 16px;
+    }
+
+}
+
+@media (max-width: 750px){
+    .col1img{
+        height: 12vh;
+        margin-left: -5px;
+    }
+
+}
+@media (max-width: 650px){
+    #col1{
+        display: grid;
+        grid-template-columns: repeat(1,1.4fr);
+        grid-template-rows: repeat(10,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+    }  
+    
+    #col3{
+        display: grid;
+        grid-template-columns: repeat(1,1.4fr);
+        grid-template-rows: repeat(10,1fr);
+        column-gap: 30px;
+        row-gap: 30px;
+        top: 4%;  
+    }
+
+    .col1img{
+        height: 8vh;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 500px){
+    .col1img{
+        height: 6vh;
+        margin-left: 4px;
+    }
+
 }
